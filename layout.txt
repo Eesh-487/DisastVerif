@@ -1,0 +1,63 @@
+Disaster_Verifier/
+│
+├── data/
+│   ├── raw/               # Unprocessed input data, e.g., CSV, Excel, or JSON
+│   ├── processed/         # Preprocessed or intermediate data
+│   └── external/          # External reference datasets, e.g., additional location or news data
+│
+├── geospatial_analysis/
+│   ├── knn_haversine.py   # Traditional Haversine + KNN approach
+│   ├── grgnn.py           # Graph-based GNN approach (GR-GNN)
+│   └── utils.py           # Helper functions (distance calculations, graph construction, etc.)
+│
+├── text_similarity/
+│   ├── sbert_embeddings.py    # SBERT setup and embedding generation
+│   └── text_analysis.py       # NER, sentiment, and topic modeling logic
+│
+├── news_verification/
+│   ├── news_scraper.py        # Scrape and collect relevant news articles
+│   └── credibility_scoring.py # Scoring sources, merging duplicates, contextual relevance checks
+│
+├── fusion_engine/
+│   ├── fusion_logic.py        # Weighted aggregation, ensemble scoring, dynamic fusion
+│   └── data_quality.py        # Quality checks and cross-validation across modalities
+│
+├── decision_module/
+│   ├── decision_maker.py      # Final verification, thresholding, output generation
+│   └── reporting.py           # Format and present results, logs, etc.
+│
+├── notebooks/
+│   └── exploration.ipynb      # Interactive analysis, prototyping
+│
+├── models/                    # Saved models, checkpoints, embeddings
+│   └── trained_models/        # Final or intermediate trained files
+│
+├── scripts/
+│   └── train_model.py         # End-to-end training or demonstration script
+│
+├── requirements.txt           # Project dependencies
+└── README.md                  # Overview of the project, setup instructions
+
+
+
+
+Geospatial Analysis Module:
+
+Implement the traditional Haversine + KNN approach.
+Implement the Graph-Based Enhancement (GR-GNN).
+
+Text Similarity Module:
+Generate SBERT embeddings for the disaster descriptions.
+Implement Named Entity Recognition (NER), sentiment analysis, and topic modeling.
+
+News Verification Module:
+Implement the news scraper to collect relevant news articles.
+Implement NLP filtering, source credibility scoring, duplicate article detection, and contextual relevance flagging.
+
+Multi-Modal Fusion Engine:
+Implement the weighted aggregation and ensemble scoring.
+Implement dynamic fusion techniques and robust cross-validation.
+
+Decision Module:
+Implement the final verification decision logic.
+Implement output generation to provide the final confidence score and supporting evidence.

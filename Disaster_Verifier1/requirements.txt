@@ -1,0 +1,29 @@
+# requirements.txt
+
+# Data processing
+pandas
+numpy
+scikit-learn
+
+# Geospatial analysis
+geopy
+networkx
+torch
+torch-geometric
+
+# Text similarity and NLP
+transformers
+sentence-transformers
+nltk
+spacy
+gensim
+
+# Web scraping and news verification
+beautifulsoup4
+requests
+
+# General utilities
+tqdm
+
+# Testing
+pytest
