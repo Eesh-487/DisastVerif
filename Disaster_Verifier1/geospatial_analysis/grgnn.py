@@ -1,6 +1,6 @@
 import networkx as nx
 import numpy as np
-from utils import haversine_distance  # Import helper function from utils.py
+from .utils import haversine_distance  # Import helper function from utils.py
 
 def construct_geospatial_graph(events, proximity_threshold):
     """
