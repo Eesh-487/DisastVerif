@@ -2,7 +2,6 @@
 
 # Data processing
 pandas
-numpy
 scikit-learn
 
 # Geospatial analysis
@@ -28,4 +27,7 @@ tqdm
 # Testing
 pytest
 
-flask
+Flask
+Flask-Cors
+gunicorn
+numpy
