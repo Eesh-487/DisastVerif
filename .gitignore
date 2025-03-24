@@ -1,0 +1,55 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Distribution/build artifacts
+.Python
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# Installer logs and pip cache
+pip-log.txt
+pip-delete-this-directory.txt
+.cache/
+
+# Test and coverage reports
+.tox/
+.nox/
+.coverage
+.coverage.*
+.pytest_cache/
+nosetests.xml
+coverage.xml
+
+# Editors/IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Data folders (raw, processed, external data)
+data/raw/
+data/processed/
+data/external/
+
+# Model checkpoints and large generated files
+models/
+
+# Flask instance folder (if used for instance-specific configs)
+instance/
+.webassets-cache
