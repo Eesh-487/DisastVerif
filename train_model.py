@@ -31,7 +31,7 @@ def load_data():
     from geopy.geocoders import Nominatim
     from geopy.exc import GeocoderTimedOut, GeocoderUnavailable
 
-    file_path = os.path.join("C:\\", "Users", "eeshk", "OneDrive", "Desktop", "Disaster_Verifier", "Disaster_Verifier1", "data", "preprocessed_disasters.xlsx")
+    file_path = os.path.join("Disaster_Verifier", "data", "preprocessed_disasters.xlsx")
     
     logging.info(f"Loading disaster data from Excel: {file_path}")
     try:
