@@ -80,8 +80,8 @@ def create_disaster():
             # Add verification result to disaster data (optional)
             disaster_data['verification'] = {
                 'probability': verification_result['probability'],
-                'classification': verification_result['classification'],
-                'evidence': verification_result['evidence']
+                # 'classification': verification_result['classification'],
+                # 'evidence': verification_result['evidence']
             }
             
             # TODO: Save to database

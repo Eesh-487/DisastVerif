@@ -195,19 +195,12 @@ def verify_disaster(disaster_data):
     
     # Build detailed result object
     result = {
-        'probability': weighted_score,
-        'classification': probability_class,
-        'evidence': evidence,
-        'component_scores': {
-            'geospatial': geo_score,
-            'text': text_score,
-            'news': news_score
-        },
-        'details': {
-            'geospatial': geo_result,
-            'text': text_result,
-            'news': news_result
-        }
+    "message": "Disaster verified and saved",
+    "success": True,
+    "verification": {
+        "classification": probability_class
+    },
+    "probability": weighted_score
     }
     
     logger.info(f"Disaster verification complete: {probability_class} ({weighted_score:.4f})")
